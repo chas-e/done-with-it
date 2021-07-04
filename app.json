@@ -2,7 +2,7 @@
   "expo": {
     "name": "done-with-it",
     "slug": "done-with-it",
-    "version": "1.0.0",
+    "version": "21.07.03",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Virtual thrift store",
+    "githubUrl": "https://github.com/chas-e/done-with-it"
   }
 }

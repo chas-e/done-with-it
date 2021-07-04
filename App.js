@@ -1,14 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Image, SafeAreaView, Text, View } from 'react-native';
 
 export default function App() {
-  let x = 1;
+  const handlePress = () => console.log('You clicked me!!!');
   return (
-    <View style={styles.container}>
-      <Text>Welcome to Done With It</Text>
+    <SafeAreaView style={styles.container}>
+      <Text numberOfLines={1} onPress={handlePress}>
+        Welcome to Done With -- It A place to get rid of the things you love to
+        leave.
+      </Text>
+      <Image
+        source={{
+          width: 200,
+          height: 200,
+          uri: 'https://picsum.photos/200',
+        }}
+      />
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 
